@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Course</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta
+      name="keywords"
+      content="html, html course, html tutorial, html tags, html elements, web development, front-end development"
+    />
+    <meta
+      name="description"
+      content="Learn the basics of HTML, including tags, elements, and how to structure a web page."
+    />
+    <meta name="author" content="Mohamed EL MACHHOUNE" />
+    <link rel="shortcut icon" href="./src/icon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <section class="containerSection">
+      <div
+        class="container bg-gradient-to-br from-indigo-100 via-purple-100 to-white border-4 border-indigo-300 rounded-3xl shadow-2xl p-8 mx-auto my-10 max-w-2xl"
+      >
+        <h1
+          class="text-3xl font-extrabold text-center text-indigo-800 mb-8 tracking-widest drop-shadow"
+        >
+          Tracks At GoMyCode
+        </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center border-t-4 border-indigo-400"
+          >
+            <span class="text-4xl mb-2">🐺</span>
+            <span class="font-bold text-lg text-gray-800">House Stark</span>
+            <span class="text-purple-500 mt-1">The Direwolf</span>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center border-t-4 border-yellow-400"
+          >
+            <span class="text-4xl mb-2">🦁</span>
+            <span class="font-bold text-lg text-gray-800">House Lannister</span>
+            <span class="text-yellow-600 mt-1">The Lion</span>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center border-t-4 border-red-400"
+          >
+            <span class="text-4xl mb-2">🐉</span>
+            <span class="font-bold text-lg text-gray-800">House Targaryen</span>
+            <span class="text-red-500 mt-1">The Three-Headed Dragon</span>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center border-t-4 border-yellow-700"
+          >
+            <span class="text-4xl mb-2">🦌</span>
+            <span class="font-bold text-lg text-gray-800">House Baratheon</span>
+            <span class="text-yellow-800 mt-1">The Stag</span>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container2 bg-indigo-100 border-2 border-dashed border-purple-400 rounded-2xl p-8 mx-auto my-8 max-w-md shadow-lg"
+      >
+        <!-- Disc bullets -->
+        <ul type="circle" class="mb-6 pl-6 text-gray-800 text-lg list-[circle]">
+          <li class="mb-1">AI Track</li>
+          <li class="mb-1">Web Track</li>
+          <li class="mb-1">Game Track</li>
+          <li class="mb-1">Data Science Track</li>
+        </ul>
+        <ol
+          type="A"
+          class="bg-white rounded-lg p-4 my-4 text-gray-800 text-base shadow"
+        >
+          <li class="mb-1">Create a folder named "GoMyCode" on your Desktop</li>
+          <li class="mb-1">
+            Create a new folder in GoMyCode folder name it whatever you want.
+          </li>
+          <li class="mb-1">Create a new folder inside it and name it "res"</li>
+          <li class="mb-1">Create a new folder inside it and name it "css"</li>
+          <li class="mb-1">Create a new folder inside it and name it "css"</li>
+        </ol>
+        <!-- Square bullets -->
+        <ul
+          type="square"
+          class="mt-6 pl-6 text-indigo-900 text-lg list-[square]"
+        >
+          <li class="mb-1">AI Track</li>
+          <li class="mb-1">Web Track</li>
+          <li class="mb-1">Game Track</li>
+          <li class="mb-1">Data Science Track</li>
+        </ul>
+      </div>
+
+      <div
+        class="registration-container bg-white border-2 border-gray-800 rounded-xl max-w-sm mx-auto my-8 p-8 shadow-xl"
+      >
+        <h2 class="text-center text-2xl font-bold text-indigo-900 mb-6">
+          Register for GoMyCode
+        </h2>
+        <form class="flex flex-col gap-2">
+          <label for="name" class="mb-1 text-gray-800 font-medium">Name:</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            name="name"
+            required
+            class="p-3 mb-3 border border-purple-300 rounded-md bg-indigo-50 focus:outline-none focus:border-indigo-500"
+          />
+
+          <label for="email" class="mb-1 text-gray-800 font-medium"
+            >Email:</label
+          >
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="p-3 mb-3 border border-purple-300 rounded-md bg-indigo-50 focus:outline-none focus:border-indigo-500"
+          />
+
+          <label for="password" class="mb-1 text-gray-800 font-medium"
+            >Password:</label
+          >
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            class="p-3 mb-3 border border-purple-300 rounded-md bg-indigo-50 focus:outline-none focus:border-indigo-500"
+          />
+
+          <label for="track" class="mb-1 text-gray-800 font-medium"
+            >Choose your track:</label
+          >
+          <select
+            id="track"
+            name="track"
+            required
+            class="p-3 mb-3 border border-purple-300 rounded-md bg-indigo-50 focus:outline-none focus:border-indigo-500"
+          >
+            <option value="">-- Select a track --</option>
+            <option value="ai">AI Track</option>
+            <option value="web">Web Track</option>
+            <option value="game">Game Track</option>
+            <option value="data-science">Data Science Track</option>
+          </select>
+
+          <label for="bio" class="mb-1 text-gray-800 font-medium"
+            >Short Bio:</label
+          >
+          <textarea
+            id="bio"
+            name="bio"
+            rows="4"
+            placeholder="Tell us a little about yourself..."
+            class="p-3 mb-3 border border-purple-300 rounded-md bg-indigo-50 focus:outline-none focus:border-indigo-500 resize-y"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="bg-indigo-800 text-white rounded-md py-3 px-6 font-bold text-lg mt-2 hover:bg-indigo-600 transition"
+          >
+            Register
+          </button>
+        </form>
+      </div>
+    </section>
+    <section class="pricing-container">
+      <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl font-extrabold text-center text-indigo-800 mb-10 tracking-widest drop-shadow"
+        >
+          Our Pricing Plans
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Basic Plan -->
+          <div
+            class="rounded-2xl border border-gray-200 p-8 shadow-lg flex flex-col items-center bg-white"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Basic</h3>
+            <p class="text-4xl font-bold text-indigo-700 mb-2">$15</p>
+            <span class="text-sm text-gray-500 mb-6">/month</span>
+            <ul class="mb-8 space-y-2 w-full">
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> 5 users included
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> 1GB of storage
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Email support
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="w-full text-center rounded-full border border-indigo-600 bg-white px-6 py-3 font-medium text-indigo-600 hover:bg-indigo-50 transition"
+              >Choose Basic</a
+            >
+          </div>
+          <!-- Pro Plan (highlighted) -->
+          <div
+            class="rounded-2xl border-4 border-indigo-600 p-10 shadow-2xl flex flex-col items-center bg-gradient-to-br from-indigo-100 via-purple-100 to-white scale-105 z-10 relative"
+          >
+            <div
+              class="absolute -top-5 left-1/2 -translate-x-1/2 bg-indigo-600 text-white px-4 py-1 rounded-full text-xs font-bold shadow"
+            >
+              Recommended
+            </div>
+            <h3 class="text-2xl font-extrabold text-indigo-800 mb-2">Pro</h3>
+            <p class="text-5xl font-extrabold text-indigo-700 mb-2">$30</p>
+            <span class="text-base text-gray-600 mb-6">/month</span>
+            <ul class="mb-8 space-y-2 w-full">
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> 20 users included
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> 10GB of storage
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Priority email support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Help center access
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Phone support
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="w-full text-center rounded-full border border-indigo-600 bg-indigo-600 px-6 py-3 font-medium text-white hover:bg-indigo-700 transition"
+              >Choose Pro</a
+            >
+          </div>
+          <!-- Ultimate Plan -->
+          <div
+            class="rounded-2xl border border-yellow-500 p-8 shadow-lg flex flex-col items-center bg-white"
+          >
+            <h3 class="text-xl font-semibold text-yellow-700 mb-2">Ultimate</h3>
+            <p class="text-4xl font-bold text-yellow-600 mb-2">$50</p>
+            <span class="text-sm text-gray-500 mb-6">/month</span>
+            <ul class="mb-8 space-y-2 w-full">
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Unlimited users
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> 100GB of storage
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> 24/7 support
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Dedicated account manager
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-green-500">✔</span> Advanced analytics
+              </li>
+            </ul>
+            <a
+              href="#"
+              class="w-full text-center rounded-full border border-yellow-500 bg-yellow-500 px-6 py-3 font-medium text-white hover:bg-yellow-600 transition"
+              >Choose Ultimate</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
