@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  background-color: #18476f;
+  color: #fff;
+  padding: 50px 20px;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+}
+
+section h2 {
+  text-align: center;
+  color: #18476f;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+#features ul {
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+}
+#features ul li {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+#cta {
+  text-align: center;
+  padding: 40px 20px;
+  background: #e3f2fd;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+#cta #shopNow {
+  background-color: #18476f;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#cta #shopNow:hover {
+  background-color: #0f2c45;
+}
+
+#about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-left: 6px solid #18476f;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+#testimonials {
+  background: #f1f1f1;
+  padding: 40px 20px;
+  text-align: center;
+}
+#testimonials .testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 600px;
+}
+#testimonials .testimonial span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+#categories {
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+#categories .category {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+#categories .category:hover {
+  transform: translateY(-5px);
+  border-color: #18476f;
+}
+
+#newsletter {
+  text-align: center;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+#newsletter #newsletterForm {
+  margin-top: 20px;
+}
+#newsletter #newsletterForm input[type=email] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+#newsletter #newsletterForm button {
+  background: #18476f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#newsletter #newsletterForm button:hover {
+  background: #0f2c45;
+}
+
+#team {
+  text-align: center;
+  padding: 40px 0;
+}
+#team .team-member {
+  display: inline-block;
+  margin: 20px;
+  max-width: 200px;
+}
+#team .team-member img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+#team .team-member h3 {
+  margin-top: 10px;
+  color: #18476f;
+}
+
+footer {
+  background: #18476f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  #categories {
+    flex-direction: column;
+    align-items: center;
+  }
+  .category {
+    width: 90%;
+  }
+  #newsletterForm {
+    flex-direction: column;
+  }
+  #newsletterForm input[type=email],
+  #newsletterForm button {
+    width: 90%;
+    margin: 10px auto;
+  }
+}/*# sourceMappingURL=style.css.map */
